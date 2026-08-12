@@ -1,0 +1,37 @@
+using System;
+
+namespace Lab1_AccessModifiers
+{
+    public class GraduateStudent : Student
+    {
+        public void ShowData()
+        {
+            Console.WriteLine("Inside GraduateStudent through inheritance:");
+
+            Console.WriteLine("Name: " + Name);
+            Console.WriteLine("Department: " + Department);
+            Console.WriteLine("CGPA: " + CGPA);
+            Console.WriteLine("College: " + College);
+
+            // Not accessible:
+            // Console.WriteLine(Age);
+            // Console.WriteLine(Address);
+        }
+
+        public void TestStudentObject()
+        {
+            Student student = new Student();
+
+            Console.WriteLine("\nThrough Student object:");
+
+            Console.WriteLine("Name: " + student.Name);
+            Console.WriteLine("CGPA: " + student.CGPA);
+            Console.WriteLine("College: " + student.College);
+
+            // Not accessible:
+            // Console.WriteLine(student.Age);
+            // Console.WriteLine(student.Department);
+            // Console.WriteLine(student.Address);
+        }
+    }
+}
