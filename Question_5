@@ -1,0 +1,22 @@
+using System;
+using StudentLibrary2;
+
+namespace StudentClient2
+{
+    public class Program
+    {
+        static void Main(string[] args)
+        {
+            Student s = new Student();
+
+            Console.WriteLine("Name: " + s.Name);
+
+
+            ResearchStudent researchStudent = new ResearchStudent();
+
+            researchStudent.ShowData();
+
+            Console.ReadKey();
+        }
+    }
+}
