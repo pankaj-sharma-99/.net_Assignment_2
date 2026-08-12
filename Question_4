@@ -1,0 +1,29 @@
+using System;
+
+namespace StudentLibrary2
+{
+    public class Student
+    {
+        public string Name = "NIshi Rawat";
+
+        private int Age = 22;
+
+        protected string Department = "MCA";
+
+        internal double CGPA = 8.7;
+
+        protected internal string College = "GLA University";
+
+        private protected string Address = "Firozabad";
+
+        public void Display()
+        {
+            Console.WriteLine("Name       : " + Name);
+            Console.WriteLine("Age        : " + Age);
+            Console.WriteLine("Department : " + Department);
+            Console.WriteLine("CGPA       : " + CGPA);
+            Console.WriteLine("College    : " + College);
+            Console.WriteLine("Address    : " + Address);
+        }
+    }
+}
