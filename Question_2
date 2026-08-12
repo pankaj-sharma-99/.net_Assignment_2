@@ -1,0 +1,23 @@
+using System;
+
+namespace Lab1_AccessModifiers
+{
+    public class TestStudent
+    {
+        public void TestAccess()
+        {
+            Student student = new Student();
+
+            Console.WriteLine("From TestStudent class:");
+
+            Console.WriteLine("Name: " + student.Name);
+            Console.WriteLine("CGPA: " + student.CGPA);
+            Console.WriteLine("College: " + student.College);
+
+            // The following members cannot be accessed directly:
+            // student.Age;
+            // student.Department;
+            // student.Address;
+        }
+    }
+}
